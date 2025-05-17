@@ -69,5 +69,6 @@ Feel free to fork, raise issues, or reach out.
 ---
 
 ## 🔗 Live Demo
+till then enjoy incomplete project(https://bharatpratap392.github.io/COLLEGEhive/)
 
 Coming soon...
