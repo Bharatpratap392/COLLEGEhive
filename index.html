@@ -1,0 +1,351 @@
+pwd<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLLEGEhive - Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <h2>COLLEGEhive</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li class="active" data-page="dashboard">
+                        <i class="fas fa-home"></i>
+                        <span>Dashboard</span>
+                    </li>
+                    <li data-page="quizzes">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Quizzes</span>
+                    </li>
+                    <li data-page="assignments">
+                        <i class="fas fa-tasks"></i>
+                        <span>Assignments</span>
+                    </li>
+                    <li data-page="planner">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Planner</span>
+                    </li>
+                    <li data-page="faculty">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>Faculty</span>
+                    </li>
+                    <li data-page="profile">
+                        <i class="fas fa-user"></i>
+                        <span>Profile</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Dashboard Section -->
+            <div class="page-content" id="dashboard">
+                <div class="header">
+                    <h1>Welcome, <span class="student-name">John Doe</span></h1>
+                    <div class="user-info">
+                        <i class="fas fa-bell"></i>
+                        <div class="profile-pic">
+                            <img src="https://via.placeholder.com/40" alt="Profile">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-grid">
+                    <div class="card">
+                        <h3>Upcoming Quizzes</h3>
+                        <div class="quiz-list">
+                            <div class="quiz-item">
+                                <div class="quiz-info">
+                                    <h4>Mathematics Quiz</h4>
+                                    <p>Due: Tomorrow, 10:00 AM</p>
+                                </div>
+                                <button class="btn-primary">Start Quiz</button>
+                            </div>
+                            <div class="quiz-item">
+                                <div class="quiz-info">
+                                    <h4>Physics Quiz</h4>
+                                    <p>Due: Friday, 2:00 PM</p>
+                                </div>
+                                <button class="btn-primary">Start Quiz</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Recent Assignments</h3>
+                        <div class="assignment-list">
+                            <div class="assignment-item">
+                                <div class="assignment-info">
+                                    <h4>Programming Project</h4>
+                                    <p>Due: Next Monday</p>
+                                </div>
+                                <span class="status pending">Pending</span>
+                            </div>
+                            <div class="assignment-item">
+                                <div class="assignment-info">
+                                    <h4>Research Paper</h4>
+                                    <p>Due: Next Friday</p>
+                                </div>
+                                <span class="status in-progress">In Progress</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Today's Schedule</h3>
+                        <div class="schedule-list">
+                            <div class="schedule-item">
+                                <div class="time">9:00 AM</div>
+                                <div class="event">
+                                    <h4>Mathematics Class</h4>
+                                    <p>Room 101</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="time">11:00 AM</div>
+                                <div class="event">
+                                    <h4>Physics Lab</h4>
+                                    <p>Lab 3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Quick Links</h3>
+                        <div class="quick-links">
+                            <a href="#" class="quick-link-item">
+                                <i class="fas fa-book"></i>
+                                <span>Course Materials</span>
+                            </a>
+                            <a href="#" class="quick-link-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Academic Calendar</span>
+                            </a>
+                            <a href="#" class="quick-link-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Grades</span>
+                            </a>
+                            <a href="#" class="quick-link-item">
+                                <i class="fas fa-cog"></i>
+                                <span>Settings</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quizzes Section -->
+            <div class="page-content" id="quizzes" style="display: none;">
+                <div class="header">
+                    <h1>Quizzes</h1>
+                </div>
+                <div class="quizzes-container">
+                    <div class="quiz-card">
+                        <div class="quiz-header">
+                            <h3>Mathematics Quiz</h3>
+                            <span class="quiz-status">Available</span>
+                        </div>
+                        <div class="quiz-details">
+                            <p><i class="fas fa-clock"></i> Duration: 30 minutes</p>
+                            <p><i class="fas fa-calendar"></i> Due: Tomorrow, 10:00 AM</p>
+                            <p><i class="fas fa-question-circle"></i> Questions: 20</p>
+                        </div>
+                        <button class="btn-primary">Start Quiz</button>
+                    </div>
+
+                    <div class="quiz-card">
+                        <div class="quiz-header">
+                            <h3>Physics Quiz</h3>
+                            <span class="quiz-status">Available</span>
+                        </div>
+                        <div class="quiz-details">
+                            <p><i class="fas fa-clock"></i> Duration: 45 minutes</p>
+                            <p><i class="fas fa-calendar"></i> Due: Friday, 2:00 PM</p>
+                            <p><i class="fas fa-question-circle"></i> Questions: 25</p>
+                        </div>
+                        <button class="btn-primary">Start Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Assignments Section -->
+            <div class="page-content" id="assignments" style="display: none;">
+                <div class="header">
+                    <h1>Assignments</h1>
+                </div>
+                <div class="assignments-container">
+                    <div class="assignment-card">
+                        <div class="assignment-header">
+                            <h3>Programming Project</h3>
+                            <span class="status pending">Pending</span>
+                        </div>
+                        <div class="assignment-details">
+                            <p><i class="fas fa-calendar"></i> Due: Next Monday</p>
+                            <p><i class="fas fa-file-alt"></i> Type: Project</p>
+                            <p><i class="fas fa-percentage"></i> Weight: 20%</p>
+                        </div>
+                        <button class="btn-primary">View Details</button>
+                    </div>
+
+                    <div class="assignment-card">
+                        <div class="assignment-header">
+                            <h3>Research Paper</h3>
+                            <span class="status in-progress">In Progress</span>
+                        </div>
+                        <div class="assignment-details">
+                            <p><i class="fas fa-calendar"></i> Due: Next Friday</p>
+                            <p><i class="fas fa-file-alt"></i> Type: Paper</p>
+                            <p><i class="fas fa-percentage"></i> Weight: 15%</p>
+                        </div>
+                        <button class="btn-primary">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Planner Section -->
+            <div class="page-content" id="planner" style="display: none;">
+                <div class="header">
+                    <h1>Planner</h1>
+                </div>
+                <div class="planner-container">
+                    <div class="calendar">
+                        <div class="calendar-header">
+                            <button class="btn-icon"><i class="fas fa-chevron-left"></i></button>
+                            <h2>September 2023</h2>
+                            <button class="btn-icon"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                        <div class="calendar-grid">
+                            <!-- Calendar days will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    <div class="events-list">
+                        <h3>Upcoming Events</h3>
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="day">15</span>
+                                <span class="month">Sep</span>
+                            </div>
+                            <div class="event-details">
+                                <h4>Mathematics Quiz</h4>
+                                <p>10:00 AM - 11:00 AM</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="day">18</span>
+                                <span class="month">Sep</span>
+                            </div>
+                            <div class="event-details">
+                                <h4>Programming Project Due</h4>
+                                <p>11:59 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faculty Section -->
+            <div class="page-content" id="faculty" style="display: none;">
+                <div class="header">
+                    <h1>Faculty</h1>
+                </div>
+                <div class="faculty-container">
+                    <div class="faculty-card">
+                        <div class="faculty-image">
+                            <img src="https://via.placeholder.com/150" alt="Professor Smith">
+                        </div>
+                        <div class="faculty-info">
+                            <h3>Professor Smith</h3>
+                            <p>Mathematics Department</p>
+                            <div class="contact-info">
+                                <p><i class="fas fa-envelope"></i> smith@college.edu</p>
+                                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                            </div>
+                            <button class="btn-primary">Schedule Meeting</button>
+                        </div>
+                    </div>
+
+                    <div class="faculty-card">
+                        <div class="faculty-image">
+                            <img src="https://via.placeholder.com/150" alt="Professor Johnson">
+                        </div>
+                        <div class="faculty-info">
+                            <h3>Professor Johnson</h3>
+                            <p>Physics Department</p>
+                            <div class="contact-info">
+                                <p><i class="fas fa-envelope"></i> johnson@college.edu</p>
+                                <p><i class="fas fa-phone"></i> (555) 987-6543</p>
+                            </div>
+                            <button class="btn-primary">Schedule Meeting</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Section -->
+            <div class="page-content" id="profile" style="display: none;">
+                <div class="header">
+                    <h1>Profile</h1>
+                </div>
+                <div class="profile-container">
+                    <div class="profile-header">
+                        <div class="profile-image">
+                            <img src="https://via.placeholder.com/150" alt="Profile Picture">
+                            <button class="btn-secondary">Change Photo</button>
+                        </div>
+                        <div class="profile-info">
+                            <h2>John Doe</h2>
+                            <p>Computer Science Major</p>
+                            <p>Student ID: CS2023001</p>
+                        </div>
+                    </div>
+                    <div class="profile-details">
+                        <div class="detail-section">
+                            <h3>Personal Information</h3>
+                            <div class="detail-item">
+                                <label>Email</label>
+                                <p>john.doe@college.edu</p>
+                            </div>
+                            <div class="detail-item">
+                                <label>Phone</label>
+                                <p>(555) 123-4567</p>
+                            </div>
+                            <div class="detail-item">
+                                <label>Address</label>
+                                <p>123 College Street, City, State</p>
+                            </div>
+                        </div>
+                        <div class="detail-section">
+                            <h3>Academic Information</h3>
+                            <div class="detail-item">
+                                <label>Major</label>
+                                <p>Computer Science</p>
+                            </div>
+                            <div class="detail-item">
+                                <label>Year</label>
+                                <p>3rd Year</p>
+                            </div>
+                            <div class="detail-item">
+                                <label>GPA</label>
+                                <p>3.8</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
